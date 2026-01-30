@@ -1,11 +1,62 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Food</title>
-    <style src="../css/style.css"></style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="Scrip.js"></script>
 </head>
 <body>
-   <h1 class="">Welcome to my website</h1> 
+  <header class="site-header">
+    <h1 id="main-title">My Website</h1>
+    <h2 id="subtitle">Welcome to my little demo site</h2>
+    <h3 id="section-title">A section title</h3>
+  </header>
+
+  <main class="content">
+    <section class="links">
+      <p>Quick links to other websites:</p>
+      <!-- Two plain links -->
+      <ul>
+        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+        <li><a href="https://en.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+      </ul>
+    </section>
+
+    <section class="buttons">
+      <p>Buttons that open the same sites (also use JS):</p>
+      <div class="btn-row">
+        <button id="btn-google" class="btn">Open Google</button>
+        <button id="btn-wiki" class="btn">Open Wikipedia</button>
+      </div>
+      <div class="btn-row">
+        <button id="btn-theme" class="btn secondary">Toggle theme</button>
+        <button id="btn-message" class="btn secondary">Show message</button>
+      </div>
+    </section>
+
+    <section class="images">
+      <p>Two pictures:</p>
+      <div class="image-row">
+        <!-- Two pictures from picsum.photos (placeholder) -->
+        <figure>
+          <img src="https://picsum.photos/seed/pic1/640/360" alt="Sample photo 1">
+          <figcaption>Sample picture 1</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://picsum.photos/seed/pic2/640/360" alt="Sample photo 2">
+          <figcaption>Sample picture 2</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> My Website — Created with HTML, CSS & JavaScript</small>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
